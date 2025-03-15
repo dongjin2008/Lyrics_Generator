@@ -12,12 +12,12 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set Up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"  # Change to your required Python version
+          python-version: "3.x"
 
       - name: Install Dependencies
         run: |
@@ -29,7 +29,7 @@ jobs:
           pyinstaller --onefile main.py
 
       - name: Upload EXE Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Updated version
         with:
           name: built-exe
           path: dist/main.exe
