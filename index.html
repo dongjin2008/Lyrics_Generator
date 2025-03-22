@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyrics Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lyrics Generator</h1>
+        
+        <div class="input-output-container">
+            <div class="input-container">
+                <h2>Input Lyrics</h2>
+                <textarea id="inputLyrics" placeholder="Enter lyrics with A, B, C markers and // separators..."></textarea>
+                <div class="order-input">
+                    <label for="orderInput">Enter the order (e.g., AABCM):</label>
+                    <input type="text" id="orderInput" placeholder="AABCM">
+                </div>
+                <button id="generateBtn">Generate Lyrics</button>
+            </div>
+            
+            <div class="output-container">
+                <h2>Generated Lyrics</h2>
+                <textarea id="outputLyrics" readonly></textarea>
+                <button id="saveBtn">Save to File</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
